@@ -1,14 +1,31 @@
-<!-- html page with dark grey background-->
-<html>
-<head>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>André Nowak</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      #myVideo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="assets/loop.mp4" type="video/mp4" />
+    </video>
+  </body>
 </html>
-<body >
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-            </div>
-        </div>
-    </div>
-</body>
