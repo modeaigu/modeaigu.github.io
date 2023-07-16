@@ -1,0 +1,4 @@
+/* add dark grey background to the index.html */
+body {
+  background-color: #222;
+}
