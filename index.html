@@ -22,6 +22,14 @@
         object-fit: cover;
       }
     </style>
+    <script>
+      document.addEventListener("contextmenu", function (e) {
+        // Check if the right-click event occurred on the video element
+        if (e.target.tagName.toLowerCase() === "video") {
+          e.preventDefault(); // Prevent the default context menu from appearing
+        }
+      });
+    </script>
   </head>
   <body>
     <video autoplay muted loop id="myVideo">
