@@ -3,7 +3,6 @@ body {
   background-color: #222;
 }
 
-
 /* .content::after {
   content: "";
   position: absolute;
@@ -21,7 +20,7 @@ body {
 
 .social {
   position: fixed;
-  padding-left :30px;
+  padding-left: 30px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,21 +32,18 @@ body {
   color: #bebaba;
   font-size: 30px;
   display: block;
-  
+
   border-radius: 50%;
   width: fit-content;
   height: fit-content;
-  
 }
 
 /* on hover make the icon slightly larger */
 .social a:hover {
   transform: scale(1.2);
-  filter: 
-    drop-shadow(0 0 0.75rem #fff) ;
-    /* drop-shadow(0 0 0.25rem #acaaaa); */
+  filter: drop-shadow(0 0 0.75rem #fff);
+  /* drop-shadow(0 0 0.25rem #acaaaa); */
 }
-
 
 /* add different arrangement of social icons for mobile phones or the potrait mode where half the social icons are above the video and half are below */
 @media (max-width: 768px) {
@@ -62,7 +58,7 @@ body {
     height: 100px;
     /*make this at the bottom instead*/
     top: 0px;
-    
+
     /* top: 0; */
     left: 0;
     transform: none;
@@ -82,7 +78,6 @@ body {
 @media (hover: none) {
   .social a:active {
     transform: scale(1.2);
-  filter: 
-    drop-shadow(0 0 0.75rem #fff) ;
+    filter: drop-shadow(0 0 0.75rem #fff);
   }
 }
