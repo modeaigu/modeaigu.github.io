@@ -2,3 +2,87 @@
 body {
   background-color: #222;
 }
+
+
+/* .content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
+  background: radial-gradient(white, #3984ff00 80%);
+  width: 100px;
+  height: 100px;
+  top: calc(var(--y, 0) * 1px - 50px);
+  left: calc(var(--x, 0) * 1px - 50px);
+} */
+
+.social {
+  position: fixed;
+  padding-left :30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social a {
+  color: #bebaba;
+  font-size: 30px;
+  display: block;
+  
+  border-radius: 50%;
+  width: fit-content;
+  height: fit-content;
+  
+}
+
+/* on hover make the icon slightly larger */
+.social a:hover {
+  transform: scale(1.2);
+  filter: 
+    drop-shadow(0 0 0.75rem #fff) ;
+    /* drop-shadow(0 0 0.25rem #acaaaa); */
+}
+
+
+/* add different arrangement of social icons for mobile phones or the potrait mode where half the social icons are above the video and half are below */
+@media (max-width: 768px) {
+  .social {
+    flex-direction: row;
+    position: fixed;
+    padding-left: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    height: 100px;
+    /*make this at the bottom instead*/
+    top: 0px;
+    
+    /* top: 0; */
+    left: 0;
+    transform: none;
+  }
+  .social a {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+  }
+  .social a:hover {
+    transform: none;
+    filter: none;
+  }
+}
+
+/*add different css for touch devices*/
+@media (hover: none) {
+  .social a:active {
+    transform: scale(1.2);
+  filter: 
+    drop-shadow(0 0 0.75rem #fff) ;
+  }
+}
