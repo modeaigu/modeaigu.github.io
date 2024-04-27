@@ -29,7 +29,7 @@ body {
 }
 
 .social a {
-  color: #dab31b;
+  color: #c3c3c3;
   font-size: 30px;
   display: block;
 
@@ -57,10 +57,10 @@ body {
     width: 100%;
     height: 100px;
     /*make this at the bottom instead*/
-    top: 0px;
+    bottom: 0px;
 
     /* top: 0; */
-    left: 0;
+    /* left: 0; */
     transform: none;
   }
   .social a {
